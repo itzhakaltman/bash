@@ -1,11 +1,17 @@
 #!/bin/bash
 
-echo "Starting at: $(date)"; echo
+line="============================================="
 
-echo "UPTIME"; uptime; echo
+echo $line
 
-echo "FREE"; free; echo
+echo "Starting at: $(date)"; echo $line
 
-echo "WHO"; who; echo
+echo "UPTIME"; uptime; echo $line
 
-echo "Finishing at $(date)"
+echo "FREE"; free; echo $line
+
+echo "WHO"; who; echo $line
+
+echo "Finishing at $(date)";
+
+echo $line
