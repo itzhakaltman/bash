@@ -1,0 +1,27 @@
+whoami
+
+pwd                  # present working directory
+
+ls                   # list
+
+ls -a                # show hidden folders and files
+
+ls -l                # show more details about VISIBLE files
+
+------------------------------------------------------------------------------------------------------------------------
+
+drwxrwxrwx
+
+d rwx rwx rwx
+
+Directory/File | Readable/Writable/Executable | Readable/Writable/Executable | Readable/Writable/Executable |
+
+               |      4        2         1    |      4        2         1    |      4        2          1   |
+
+               |            owner             |            group             |             others           |
+
+------------------------------------------------------------------------------------------------------------------------
+
+% file commands.txt
+commands.txt: ASCII text
+
