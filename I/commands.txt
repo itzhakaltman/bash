@@ -25,3 +25,15 @@ Directory/File | Readable/Writable/Executable | Readable/Writable/Executable | R
 % file commands.txt
 commands.txt: ASCII text
 
+
+-----------------
+open // xdg-open
+-----------------
+
+
+open Desktop/
+open file.txt
+
+. - present working directory
+
+open .
