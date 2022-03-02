@@ -45,3 +45,17 @@ file *.txt
 rm *
 
 cp -R A-folder/ A2folder
+
+less
+
+tail
+
+find -type f
+
+find newfolder/ -name 1.t*
+
+grep
+
+grep -i so b.txt     # 'so' inside b.txt
+
+grep -v              # except
