@@ -59,3 +59,26 @@ grep
 grep -i so b.txt     # 'so' inside b.txt
 
 grep -v              # except
+
+
+
+awk '{print }' text1.txt                              # print all columns
+
+awk '{print $0}' text1.txt                            # print all columns
+
+awk '{print $1}' text1.txt                            # print first column of the file
+
+awk '{print $1,$2}' text1.txt                         # print first column of the file
+
+awk '{print $NF}' text1.txt                           # print last column of the file
+
+awk '{print $(NF-1)}' text1.txt                       # print last column of the file
+
+awk 'NR==2   {print $(NF-1)}' text1.txt               # print second row and last column of the file
+
+awk 'NR==2,NR==5   {print $(NF-1)}' text1.txt         # print from second row to 5th and from last column of the file
+
+awk 'NR==2;NR==5   {print $(NF-1)}' text1.txt         # print second row and 5th and from last column of the file
+
+awk -F ";" '{print $1}' c-text1.txt                   # separator that we want to use
+
