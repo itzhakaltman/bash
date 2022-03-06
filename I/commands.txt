@@ -82,3 +82,26 @@ awk 'NR==2;NR==5   {print $(NF-1)}' text1.txt         # print second row and 5th
 
 awk -F ";" '{print $1}' c-text1.txt                   # separator that we want to use
 
+------------------------------------------------------------------------------------------------------------------------
+
+kubectl get deploy | grep app | $(awk '{print "kubectl scale deploy " $1" --replicas=0"}')
+
+kubectl get pod -A | grep -v Run | $(awk '{print "kubectl delete pod -n " $1,$2}')
+
+------------------------------------------------------------------------------------------------------------------------
+
+awk '/usa/ {print }' text1.txt                        # print all rows with 'usa' text
+
+awk '/usa|ita/ {print }' text1.txt                    # print all rows with 'usa' or 'ita' text
+
+awk '$2~/i/ {print }' text1.txt                       # look 'i' in the 2nd column
+
+awk '$2~/i/ {print $2,$4}' text1.txt                  # print second and third column when 'i' in second column
+
+awk '$4==$5 {print }' text1.txt                       # print row with logical == true
+
+awk ' {print length($1)}' text1.txt                   # print length of values in the first column
+
+awk ' {print $1,length($1)}' text1.txt                # print the first column and length of values in the first column
+
+awk 'NR==2  {print $1,length($1),$5}' text1.txt       # print second row of the first column and length of values in the first column
