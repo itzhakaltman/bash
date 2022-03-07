@@ -105,3 +105,14 @@ awk ' {print length($1)}' text1.txt                   # print length of values i
 awk ' {print $1,length($1)}' text1.txt                # print the first column and length of values in the first column
 
 awk 'NR==2  {print $1,length($1),$5}' text1.txt       # print second row of the first column and length of values in the first column
+
+sudo chown Alex test.txt
+
+sudo chgrp finance test.txt
+
+sudo chmod u=wrx test.txt
+
+sudo chmod +x test.txt
+
+sudo chmod -x test.txt
+
