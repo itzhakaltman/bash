@@ -106,6 +106,8 @@ awk ' {print $1,length($1)}' text1.txt                # print the first column a
 
 awk 'NR==2  {print $1,length($1),$5}' text1.txt       # print second row of the first column and length of values in the first column
 
+------------------------------------------------------------------------------------------------------------------------
+
 sudo chown Alex test.txt
 
 sudo chgrp finance test.txt
@@ -115,4 +117,93 @@ sudo chmod u=wrx test.txt
 sudo chmod +x test.txt
 
 sudo chmod -x test.txt
+
+sudo chown -R Alex folder_name/
+
+sudo chgrp -R _guest folder_name/
+
+------------------------------------------------------------------------------------------------------------------------
+
+myvar=573
+
+echo "$myvar"
+
+echo ${myvar}
+
+echo ${myvar}AA
+
+echo $myvar
+
+unset myvar
+
+---
+
+mycommand=ls
+
+echo $mycommand
+
+$mycommand
+
+---
+
+echo $USER
+
+echo $HOME
+
+echo $PATH
+
+---
+
+$(command)
+
+d=$(ls)            # d = output of ls
+
+echo $d
+
+
+echo " $(date) "
+
+echo " `date` "
+
+
+---
+
+s=$(pwd)
+
+echo $s
+
+------------------------------------------------------------------------------------------------------------------------
+
+    .profile    .bashrc    .bash_profile    .login
+      mac OS     ubuntu
+
+------------------------------------------------------------------------------------------------------------------------
+
+---
+
+$: read myvalue
+hello world
+
+$: echo $myvalue
+
+---
+
+$: read -p "type your age " age
+type your age 87
+
+$: echo $age
+
+
+$: read -s password
+******
+$: echo $password
+
+$: read -sp "type password" pass
+type password
+
+$: echo $pass
+
+---
+
+
 
