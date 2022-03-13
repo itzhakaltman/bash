@@ -205,5 +205,16 @@ $: echo $pass
 
 ---
 
+ls c*
 
+ls | grep c
 
+ls -l | tail -4
+
+ls -l | tail -4 > info.txt
+
+---
+
+mv hello.txt hello.sh
+
+---
