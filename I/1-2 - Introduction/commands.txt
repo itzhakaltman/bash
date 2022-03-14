@@ -160,11 +160,9 @@ d=$(ls)            # d = output of ls
 
 echo $d
 
-
 echo " $(date) "
 
 echo " `date` "
-
 
 ---
 
@@ -213,8 +211,11 @@ ls -l | tail -4
 
 ls -l | tail -4 > info.txt
 
+echo "*****END*****" >> info.txt
+
 ---
 
 mv hello.txt hello.sh
 
 ---
+
