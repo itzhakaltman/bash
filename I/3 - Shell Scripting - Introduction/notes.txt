@@ -5,3 +5,4 @@ kubectl apply -f ./deploy.yaml --namespace=$(cat ../.env_name)
 kubectl apply -f ./svc.yaml --namespace=$(cat ../.env_name)
 
 ------------------------------------------------------------------------------------------------------------------------
+
