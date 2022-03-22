@@ -6,3 +6,18 @@ kubectl apply -f ./svc.yaml --namespace=$(cat ../.env_name)
 
 ------------------------------------------------------------------------------------------------------------------------
 
+var="abc"
+
+echo $var
+
+var="newline${var}"
+
+echo ${var}
+
+var="ABC_:${var}"
+
+PATH="/Library/Frameworks/Python.framework/Versions/3.9/bin:${PATH}"
+export PATH
+
+------------------------------------------------------------------------------------------------------------------------
+
