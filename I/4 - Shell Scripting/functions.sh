@@ -1,5 +1,6 @@
 #! /bin/bash
 
+# -------------------------------
 
 mydate(){
 
@@ -7,6 +8,8 @@ mydate(){
 	date
 	echo "have a GREAT day !"
 }
+
+# -------------------------------
 
 hello2(){
 
@@ -16,10 +19,16 @@ hello2(){
 
 }
 
+# -------------------------------
+
 echo "start here"
 
 mydate
 echo "---------------"
 
+# Input for $1 and $2
+
 hello2 "MArk" "blabla"
-echo "return value of my funct is  $? "
+
+echo "return value of my function is  $? "
+
