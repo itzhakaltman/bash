@@ -2,14 +2,17 @@
 
 read -p "Please enter the number: " number
 
-if [ ${number} -eq 0 ]; then
-	echo "Scheiße!"
-elif [ $((number %2 )) -eq 0 ]; then
-	echo "Woohoo! ${number} divisible by 2!"
-elif [ $((number %3 )) -eq 0 ]; then
-	echo "Woohoo! ${number} divisible by 3!"
-elif [ $((number %5 )) -eq 0 ]; then
-	echo "Woohoo! ${number} divisible by 5!"
-else
-  	echo ":("
-fi
+
+
+#if [ ${number} -eq 0 ]; then
+#	echo "Scheiße!"
+
+for i in {2,3,5}
+do
+  if [ $(( ${number}%i )) -eq 0 ]; then
+    echo "Woohoo! ${number} divisible by $i!"
+  fi
+done
+#else
+#  	echo ":("
+#fi
